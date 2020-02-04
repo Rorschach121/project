@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: rgb(248, 191, 106);
+}
+
+
+
+
+.calc {
+    width: 100%;
+    height: 300px;
+    border: 1px solid red;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.calc-box {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calc-box input {
+    width: 350px;
+    height: 40px;
+    border: 2px solid yellow;
+    outline: none;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 24px;
+}
+
+
+.calc-box .result {
+    width: 350px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid yellow;
+    border-radius: 50px;
+    background-color: snow;
+    font-size: 24px;
+}
+
+.calc-box .counts {
+    width: 200px;
+    height: 40px;
+    border: 2px solid yellow;
+    outline: none;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.nav a {
+    text-decoration: none;
+    color: darkmagenta;
+    font-size: 32px;
+}
+
+.nav a:hover {
+    color: darkred;
+    transition: 0.5s;
+}
+
+.nav  {
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(98, 193, 236);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapperBacg {
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.winter {
+    background: url(./photo2/zima.jpg) center center / cover no-repeat;
+}
+
+.arctic {
+    background: url(./photo2/arctica.jpg) center center / cover no-repeat;
+}
+
+.spring {
+    background: url(./photo2/vesna.jpg) center center / cover no-repeat;
+}
+
+.summer {
+    background: url(./photo2/leto.jpg) center center / cover no-repeat;
+}
+
+.autumn {
+    background: url(./photo2/osen.jpg) center center / cover no-repeat;
+}
+
+.rain {
+    background: url(./photo2/rain.jpg) center center / cover no-repeat;
+}
+
+.wilderness {
+    background: url(./photo2/pustin.jpg) center center / cover no-repeat;
+}

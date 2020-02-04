@@ -1,0 +1,489 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+::selection {background: rgb(223, 68, 93); color: rgb(245, 231, 33);}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*.................................................................... шапка */
+
+.header {
+    background: rgb(26, 23, 50);
+    height: 60px;
+    width: 100%;
+    border-bottom: 2px solid snow;
+    position: relative;
+}
+
+.header img {
+    height: 40px;
+    width: 40px;
+    margin: 10px 0 0 30px;
+}
+
+.header .menu a {
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 24px;
+    color: snow;
+}
+
+.header .menu {
+    position: absolute;
+    margin-top: 16px;
+}
+
+
+/*.................................................................... фото сайта */
+
+.box {
+    width: 100%;
+    height: 810px;
+    background: rgb(38, 35, 80);
+    position: relative;
+}
+
+.box__bcg {
+    width: 100%;
+    height: 750px;
+    background-image: url(./photo/main.jpg);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box__bcg h2 {
+    font-size: 34px;
+    color: snow;
+}
+
+.block {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    left: 40%;
+    top: 400px;
+    background-color: rgb(38, 35, 80);
+    cursor: pointer;
+}
+
+.block p {
+    /* border: 1px solid red; */
+    color: snow;
+    font-size: 20px;
+    margin: 15px 0 0 10px;
+}
+
+.line-anim {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.line-anim::before {
+    content: '';
+    width: 4px;
+    height: 100%;
+    background-color: rgb(249, 253, 1);
+    transition: 1s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.line-anim:hover::before {
+    left: 100%;
+    transform: rotate(180deg);
+    transition: 1s;
+}
+
+
+
+.box__icon {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+}
+
+.box__icon img {
+    height: 30px;
+    width: 30px;
+}
+
+#box__p {
+    color: snow;
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 30%;
+}
+
+
+/* контент */
+
+.text {
+    height: 300px;
+    /* width: 1076px; */
+    max-width: 1196px;
+    border-left: 2px solid rgb(26, 23, 50);
+    border-right: 2px solid rgb(26, 23, 50);
+    padding: 60px;
+}
+
+.text p {
+    margin-top: 25px;
+}
+
+
+/*............................................................. icon */
+
+.block-icon {
+    max-width: 100%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icon {
+    height: 300px;
+    width: 400px;
+    border: 2px solid rgb(26, 23, 50);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.icon img {
+    width: 140px;
+    height: 110px;
+    margin-top: 5px;
+}
+
+.icon h2 {
+    color: rgb(26, 23, 50);
+}
+
+.icon hr {
+    height: 4px;
+    width: 100px;
+    background-color: rgb(250, 200, 74);
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 0;
+}
+
+/* ..................................................................question send */
+
+.question-send {
+    width: 100%;
+    height: 150px;
+    border: 2px solid rgb(26, 23, 50);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(26, 23, 50);
+    font-size: 26px;
+}
+
+
+#question-send__subvit {
+    width: 160px;
+    height:  50px;
+    background-color: rgb(57, 51, 105);
+    color: snow;
+    font-size: 24px;
+    border: 2px solid rgb(223, 174, 52);
+    outline: none;
+}
+
+/* ................................................................. faq */
+
+/* .faq {
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    border: 2px solid rgb(26, 23, 50);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq .faq-item {
+    width: 90%;
+    height: 40px;
+    background-color: rgb(26, 23, 50);
+    color: snow;
+    font-size: 24px;
+} */
+
+
+/*.................................................................. padding сайта */
+
+.padding {
+    height: 215px;
+    width: 1200px;
+    background: rgb(38, 35, 80);
+    color: snow;
+    display: flex;
+    justify-content: space-between;
+}
+
+.padding__box {
+    width: 33%;
+    margin-top: 0;
+}
+
+.padding p {
+    margin-top: 10px;
+}
+
+.padding-text {
+    color: rgb(219, 171, 49);
+}
+
+.size {
+    font-size: 32px;
+}
+
+.padding1 {
+    margin-left: 30px;
+}
+
+.pIcon {
+    margin: 10px 0;
+}
+
+.pIcon img {
+    width: 30px;
+    height: 30px;
+}
+
+.padding__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.padding__img img {
+    height: 100px;
+    width: 100px;
+}
+
+.padding__trevel {
+    margin-top: 20px;
+}
+
+.padding__trevel p {
+    text-align: right;
+    margin-right: 40px;
+}
+
+
+/*................................................................... формы */
+
+.form-box {
+    position: fixed;
+    top: 10%;
+    left: 35%;
+    width: 440px;
+    height: 430px;
+    display: none;
+    /* opacity: 0;
+    transition: 0.6s; */
+}
+
+.form-box-activ {
+    display: block;
+}
+
+.pop-visible {
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(219, 93, 93); */
+}
+
+.form-container img {
+    position: absolute;
+    top: 0px;
+    left: 45%;
+    height: 60px;
+    width: 60px;
+}
+
+.form-box__close {
+    position: absolute;
+    top: 18px;
+    right: 8px;
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+    background-color: rgb(238, 181, 36);
+}
+
+.cross {
+    position: relative;
+}
+
+.cross span {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+}
+
+#cross1 {
+    top: 12px;
+    left: 3px;
+    transform: rotate(45deg)
+}
+
+#cross2 {
+    top: 12px;
+    left: 3px;
+    transform: rotate(-45deg)
+}
+
+.form-container__content p {
+    font-size: 28px;
+}
+
+.form-container__content {
+    width: 400px;
+    height: 370px;
+    background-color: #f8f8f8;
+    border: 2px solid rgb(219, 171, 49);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container__content input {
+    width: 315px;
+    height: 32px;
+    border: 2px solid rgb(219, 171, 49);
+    margin-top: 5px;
+    padding-left: 5px;
+    outline: none;
+}
+
+#subm {
+    width: 324px;
+    background-color: rgb(40, 34, 78);
+    color: #f8f8f8;
+    cursor: pointer;
+}
+
+.form-container__content textarea {
+    width: 320px;
+    height: 100px;
+    border: 2px solid rgb(219, 171, 49);
+    margin-top: 5px;
+}
+
+
+/*................................................................. cookie */
+
+.cookie {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(37, 61, 114, 0.842);
+    animation: appearanceCookie 1s linear 1s 1 normal forwards;
+}
+
+@keyframes appearanceCookie {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100px;
+    }
+}
+
+.cookie1 {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.cookie-box {
+    height: 100%;
+    width: 30%;
+    /* border: 1px solid red; */
+}
+
+.cookie__text {
+    height: 100%;
+    width: 40%;
+    color: snow;
+    font-size: 24px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 30px;
+    /* border: 1px solid red; */
+}
+
+.cookie__button button {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(247, 182, 6);
+    border: 2px solid snow;
+    color: snow;
+    font-size: 24px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.cookie__box-clouse {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    /* border: 2px solid snow; */
+}
+
+.cookie__clouse {
+    position: relative;
+}
+
+.cookieCross {
+    width: 4px;
+    height: 30px;
+    position: absolute;
+    background-color: snow;
+}
+
+.cookieCross1 {
+    transform: rotate(45deg);
+    left: 16px;
+    top: 5px;
+}
+
+.cookieCross2 {
+    transform: rotate(-45deg);
+    left: 16px;
+    top: 5px;
+}
